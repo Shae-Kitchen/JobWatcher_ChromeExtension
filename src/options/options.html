@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>JobWatcher settings</title>
+    <link rel="stylesheet" href="../shared.css" />
+    <link rel="stylesheet" href="options.css" />
+  </head>
+  <body>
+    <main>
+      <h1><img src="../../icons/icon48.png" alt="" width="28" height="28" /> JobWatcher</h1>
+
+      <section class="card">
+        <h2>Settings</h2>
+        <div class="grid">
+          <label for="interval">Check every</label>
+          <select id="interval">
+            <option value="15">15 minutes</option>
+            <option value="30">30 minutes</option>
+            <option value="60">hour</option>
+            <option value="180">3 hours</option>
+            <option value="360">6 hours</option>
+            <option value="720">12 hours</option>
+            <option value="1440">day</option>
+          </select>
+          <label for="notifications">Notifications</label>
+          <label class="check"><input type="checkbox" id="notifications" /> Show a desktop notification for new jobs</label>
+        </div>
+      </section>
+
+      <section class="card">
+        <h2>Track a page</h2>
+        <p class="muted">
+          Paste a company careers page, or a Greenhouse, Lever, Ashby or Workday job board URL.
+        </p>
+        <form id="add-form" class="row">
+          <input type="url" id="add-url" placeholder="https://example.com/careers" required />
+          <input type="text" id="add-name" placeholder="Name (optional)" />
+          <button class="primary" type="submit">Track</button>
+        </form>
+        <div id="add-status"></div>
+      </section>
+
+      <h2>Tracked pages</h2>
+      <div id="watches"></div>
+    </main>
+    <script type="module" src="options.js"></script>
+  </body>
+</html>

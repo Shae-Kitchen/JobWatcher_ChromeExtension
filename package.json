@@ -1,0 +1,12 @@
+{
+  "name": "jobwatcher-chrome-extension",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Chrome extension that tracks company careers pages for new job postings.",
+  "type": "module",
+  "scripts": {
+    "test": "node --test tests/*.test.js",
+    "icons": "python3 scripts/make_icons.py",
+    "package": "rm -f jobwatcher.zip && zip -r jobwatcher.zip manifest.json src icons"
+  }
+}

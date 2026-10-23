@@ -1,0 +1,26 @@
+main { max-width: 760px; margin: 0 auto; padding: 24px 16px 48px; }
+h1 { display: flex; align-items: center; gap: 10px; font-size: 22px; margin: 0 0 20px; }
+h2 { font-size: 15px; margin: 24px 0 10px; }
+.card h2 { margin-top: 0; }
+section.card { margin-bottom: 16px; padding: 16px; }
+p { margin: 0 0 10px; }
+.grid { display: grid; grid-template-columns: 140px 1fr; gap: 10px 12px; align-items: center; }
+.grid select { width: auto; justify-self: start; }
+.check { display: flex; align-items: center; gap: 6px; }
+.row { display: flex; gap: 8px; flex-wrap: wrap; }
+.row input[type='url'] { flex: 2 1 260px; width: auto; }
+.row input[type='text'] { flex: 1 1 140px; width: auto; }
+#add-status { margin-top: 8px; }
+.watch { margin-bottom: 12px; }
+.watch-top { display: flex; align-items: center; gap: 8px; margin-bottom: 4px; }
+.watch-top strong { font-size: 14px; flex: 1; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.watch .status { font-size: 12px; margin-bottom: 10px; }
+.fields + .fields { margin-top: 8px; }
+.fields { display: grid; grid-template-columns: 140px 1fr; gap: 8px 12px; align-items: center; }
+.fields .hint { grid-column: 2; font-size: 12px; margin-top: -4px; }
+.buttons { display: flex; gap: 8px; margin-top: 12px; flex-wrap: wrap; }
+.buttons .spacer { flex: 1; }
+@media (max-width: 560px) {
+  .grid, .fields { grid-template-columns: 1fr; }
+  .fields .hint { grid-column: 1; }
+}

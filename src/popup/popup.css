@@ -1,0 +1,27 @@
+body { width: 380px; max-height: 580px; }
+.bar { display: flex; align-items: center; justify-content: space-between; padding: 10px 12px; }
+header.bar { border-bottom: 1px solid var(--border); }
+footer.bar { border-top: 1px solid var(--border); }
+h1 { margin: 0; font-size: 15px; display: flex; align-items: center; gap: 6px; }
+.actions { display: flex; gap: 6px; }
+#current { margin: 10px 12px; }
+#current .label { font-size: 11px; text-transform: uppercase; letter-spacing: 0.04em; color: var(--muted); margin-bottom: 4px; }
+#current .row { display: flex; gap: 6px; margin-top: 8px; }
+#current .row input { flex: 1; }
+#watches { padding: 0 12px 8px; }
+.empty { padding: 16px 4px; text-align: center; }
+.watch { border-bottom: 1px solid var(--border); padding: 8px 0; }
+.watch:last-child { border-bottom: none; }
+.watch-head { display: flex; align-items: center; gap: 8px; cursor: pointer; }
+.watch-head .name { font-weight: 600; flex: 1; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.watch-head .chev { color: var(--muted); width: 10px; }
+.watch.disabled .name { color: var(--muted); }
+.meta { font-size: 12px; margin: 2px 0 0 18px; }
+.jobs { list-style: none; margin: 6px 0 0 18px; padding: 0; }
+.jobs li { padding: 3px 0; display: flex; gap: 6px; align-items: baseline; }
+.jobs li .dot { width: 7px; height: 7px; border-radius: 50%; background: var(--new); flex: none; transform: translateY(-1px); }
+.jobs li .dot.seen { background: transparent; }
+.jobs li .title { flex: 1; min-width: 0; }
+.jobs li.new .title a { font-weight: 600; }
+.jobs .loc { color: var(--muted); font-size: 12px; }
+.watch-tools { display: flex; gap: 10px; margin: 4px 0 0 18px; }
